@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@400;600;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-radius: 0.2em;
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0 62.5em #000 white;
+          box-shadow: 0 0 0 62.5em #000 white;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.l-grid {
+  display: -ms-grid;
+  display: grid;
+  font-family: "Monsterrat", sans-serif;
+  background-image: url("/images/sam-dan-truong-ju2NgSoR6pA-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.l-grid__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0.7em;
+  padding: 1em;
+}
+
+.l-grid__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 21.875em;
+  padding: 1.5em 1em;
+  margin: 1em;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0.1em 0.1em 0.5em 0.4em rgba(0, 0, 0, 0.3);
+          box-shadow: 0.1em 0.1em 0.5em 0.4em rgba(0, 0, 0, 0.3);
+}
+
+.c-logo {
+  text-decoration: none;
+  color: black;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+}
+
+.c-form {
+  font-family: "Monsterrat", sans-serif;
+  width: 100%;
+}
+
+.c-form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  width: 100%;
+}
+
+.c-form__label {
+  position: relative;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  display: block;
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+.c-form__input {
+  padding: 0.9em;
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 1em;
+  border: 0;
+  background-color: white;
+  color: black;
+  border-radius: 0.3em;
+  -webkit-transition: all ease 200ms;
+  transition: all ease 200ms;
+}
+
+.c-form__input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0.5em #5884bc;
+          box-shadow: 0 0 0.5em #5884bc;
+}
+
+.c-form__button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0.8em 1em;
+  margin-bottom: 0.5em;
+  border: none;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  width: 100%;
+  background: #ca7687;
+  background: linear-gradient(34deg, #ca7687 35%, #5884bc 100%);
+  border-radius: 0.3em;
+  margin-top: 0.5em;
+  -webkit-box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.3);
+}
+
+.c-forgot {
+  color: white;
+  font-family: "Monsterrat", sans-serif;
+  margin-bottom: 1.5em;
+  font-size: 0.875rem;
+}
+
+.c-third-party-login {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  color: white;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-decoration: none;
+  padding: 0.7em 1em;
+  border-radius: 0.3em;
+  width: 100%;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1em;
+  -webkit-box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.3);
+}
+
+.c-third-party-login__icon {
+  width: 2em;
+  height: 2em;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.c-third-party-login__text {
+  width: 100%;
+  text-align: center;
+  padding: 0 1.5em;
+}
+
+.c-third-party-login--red {
+  background-color: #e74c3c;
+}
+
+.c-third-party-login--blue {
+  background-color: #3498db;
+}
+
+.c-create-new {
+  font-family: "Monsterrat", sans-serif;
+  color: white;
+  margin-top: 0.5em;
+  font-size: 00.875rem;
+}
+
+.c-create-new__link {
+  text-decoration: none;
+  color: #17c0eb;
+}
+
+.c-create-new__link:hover, .c-create-new__link:active {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=styles.css.map */

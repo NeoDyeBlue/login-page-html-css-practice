@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@400;600;700&display=swap");
+$venice-blue: #0a498d;
+$puce: #ca7687;
+$revolver: #271e3b;
+$steel-blue: #5884bc;
+$monsterrat: "Monsterrat", sans-serif;
+$quicksand: "Quicksand", sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-radius: 0.2em;
+  -webkit-text-fill-color: black;
+  box-shadow: 0 0 0 62.5em #000 white;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.l-grid {
+  display: grid;
+  font-family: $monsterrat;
+  background-image: url("/images/sam-dan-truong-ju2NgSoR6pA-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  grid-template-rows: auto;
+
+  &__logo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 0.7em;
+    padding: 1em;
+  }
+
+  &__form {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    max-width: 21.875em;
+    padding: 1.5em 1em;
+    margin: 1em;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 0.5em;
+    align-items: center;
+    box-shadow: 0.1em 0.1em 0.5em 0.4em rgba(0, 0, 0, 0.3);
+    //margin: auto;
+  }
+}
+
+.c-logo {
+  text-decoration: none;
+  color: black;
+  font-family: $quicksand;
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+}
+
+.c-form {
+  font-family: $monsterrat;
+  width: 100%;
+
+  &__group {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  &__label {
+    position: relative;
+    font-size: 1rem;
+    font-family: $quicksand;
+    display: block;
+    color: white;
+    margin-bottom: 0.5em;
+  }
+
+  &__input {
+    padding: 0.9em;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 1em;
+    border: 0;
+    background-color: white;
+    color: black;
+    border-radius: 0.3em;
+    transition: all ease 200ms;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0.5em $steel-blue;
+    }
+  }
+
+  &__button {
+    appearance: none;
+    padding: 0.8em 1em;
+    margin-bottom: 0.5em;
+    border: none;
+    color: white;
+    font-family: $quicksand;
+    font-weight: 600;
+    width: 100%;
+    background: rgb(202, 118, 135);
+    background: linear-gradient(
+      34deg,
+      rgba(202, 118, 135, 1) 35%,
+      rgba(88, 132, 188, 1) 100%
+    );
+    border-radius: 0.3em;
+    margin-top: 0.5em;
+    box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.3);
+  }
+}
+
+.c-forgot {
+  color: white;
+  font-family: $monsterrat;
+  margin-bottom: 1.5em;
+  font-size: 0.875rem;
+}
+
+.c-third-party-login {
+  font-family: $quicksand;
+  font-weight: 600;
+  color: white;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  padding: 0.7em 1em;
+  border-radius: 0.3em;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 1em;
+  box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.3);
+
+  &__icon {
+    width: 2em;
+    height: 2em;
+    object-fit: contain;
+    filter: invert(100%);
+  }
+
+  &__text {
+    width: 100%;
+    text-align: center;
+    padding: 0 1.5em;
+  }
+
+  &--red {
+    background-color: #e74c3c;
+  }
+
+  &--blue {
+    background-color: #3498db;
+  }
+}
+
+.c-create-new {
+  font-family: $monsterrat;
+  color: white;
+  margin-top: 0.5em;
+  font-size: 00.875rem;
+
+  &__link {
+    text-decoration: none;
+    color: #17c0eb;
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}

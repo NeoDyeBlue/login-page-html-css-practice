@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/normalize.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>Login Page: HTML CSS</title>
+  </head>
+  <body>
+    <div class="l-grid">
+      <div class="l-grid__logo">
+        <a href="#" class="c-logo">SimpliSitey</a>
+      </div>
+      <div class="l-grid__form">
+        <form class="c-form" method="POST">
+          <div class="c-form__group">
+            <input
+              type="text"
+              id="username"
+              name="username"
+              class="c-form__input"
+              placeholder="Enter username"
+            />
+            <label for="username" class="c-form__label">Username</label>
+          </div>
+          <div class="c-form__group">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="c-form__input"
+              placeholder="Enter password"
+            />
+            <label for="password" class="c-form__label">Password</label>
+          </div>
+          <input type="submit" value="Login" class="c-form__button" />
+        </form>
+        <a
+          href="#
+        "
+          class="c-forgot"
+          >Forgot password?</a
+        >
+        <a href="#" class="c-third-party-login c-third-party-login--red"
+          ><img
+            class="c-third-party-login__icon"
+            src="/images/google.svg"
+            alt="Google icon"
+          />
+          <span class="c-third-party-login__text">Login using Google</span></a
+        >
+        <a href="#" class="c-third-party-login c-third-party-login--blue"
+          ><img
+            class="c-third-party-login__icon"
+            src="/images/facebook.svg"
+            alt="Facebook icon"
+          />
+          <span class="c-third-party-login__text">Login using Facebook</span></a
+        >
+        <p class="c-create-new">
+          New here?
+          <a class="c-create-new__link" href="#">Create an account</a>.
+        </p>
+      </div>
+
+      <!--- Icons by <a href="https://freeicons.io/profile/3">freeicons</a> on
+      <a href="https://freeicons.io">freeicons.io</a> --->
+    </div>
+  </body>
+</html>
