@@ -29,15 +29,17 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-.l-grid {
-  display: grid;
-  font-family: $monsterrat;
+html {
   background-image: url("/images/sam-dan-truong-ju2NgSoR6pA-unsplash.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.l-grid {
+  display: grid;
   height: 100vh;
-  width: 100vw;
   justify-content: center;
   grid-template-rows: auto;
 
