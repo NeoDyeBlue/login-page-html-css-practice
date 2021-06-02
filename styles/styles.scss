@@ -29,7 +29,13 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-html {
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
   background-image: url("/images/sam-dan-truong-ju2NgSoR6pA-unsplash.jpg");
   background-position: center;
   background-size: cover;
@@ -38,17 +44,17 @@ html {
 }
 
 .l-grid {
+  margin: auto;
   display: grid;
-  height: 100vh;
   justify-content: center;
   grid-template-rows: auto;
+  overflow: auto;
 
   &__logo {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    margin-top: 0.7em;
-    padding: 1em;
+    padding: 1.5em;
   }
 
   &__form {
@@ -182,6 +188,7 @@ html {
   color: white;
   margin-top: 0.5em;
   font-size: 00.875rem;
+  text-align: center;
 
   &__link {
     text-decoration: none;
